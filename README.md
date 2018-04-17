@@ -34,7 +34,7 @@ This application is available in the form of a Docker image that you can run as 
     sudo docker run \
       -d \
       -e ENV_DOCKER_REGISTRY_HOST=ENTER-YOUR-REGISTRY-HOST-HERE \
-      -e ENV_DOCKER_REGISTRY_PORT=ENTER-PORT-TO-YOUR-REGISTRY-HOST-HERE \
+      -e ENV_DOCKER_REGISTRY_PORT=5000 \
       -p 8080:80 \
       jiehoes/docker-registry-frontend:v2
 
@@ -101,8 +101,8 @@ do the following:
 
     sudo docker run \
       -d \
-      -e ENV_DOCKER_REGISTRY_HOST=ENTER-YOUR-REGISTRY-HOST-HERE \
-      -e ENV_DOCKER_REGISTRY_PORT=ENTER-PORT-TO-YOUR-REGISTRY-HOST-HERE \
+      -e ENV_DOCKER_REGISTRY_HOST=reg.ajie.tech \
+      -e ENV_DOCKER_REGISTRY_PORT=5000 \
       -e ENV_AUTH_USE_KERBEROS=yes \
       -e ENV_AUTH_NAME="Kerberos login" \
       -e ENV_AUTH_KRB5_KEYTAB=/etc/apache2/krb5.keytab \
@@ -120,8 +120,8 @@ If you want to start applicaton with browse mode which means no repos/tags manag
 
     sudo docker run \
       -d \
-      -e ENV_DOCKER_REGISTRY_HOST=ENTER-YOUR-REGISTRY-HOST-HERE \
-      -e ENV_DOCKER_REGISTRY_PORT=ENTER-PORT-TO-YOUR-REGISTRY-HOST-HERE \
+      -e ENV_DOCKER_REGISTRY_HOST=reg.ajie.tech \
+      -e ENV_DOCKER_REGISTRY_PORT=5000 \
       -e ENV_MODE_BROWSE_ONLY=true \
       -p 8080:80 \
       jiehoes/docker-registry-frontend:v2
