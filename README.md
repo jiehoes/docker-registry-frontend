@@ -33,7 +33,7 @@ This application is available in the form of a Docker image that you can run as 
 
     sudo docker run \
       -d \
-      -e ENV_DOCKER_REGISTRY_HOST=ENTER-YOUR-REGISTRY-HOST-HERE \
+      -e ENV_DOCKER_REGISTRY_HOST=reg.ajie.tech \
       -e ENV_DOCKER_REGISTRY_PORT=5000 \
       -p 8080:80 \
       jiehoes/docker-registry-frontend:v2
@@ -48,7 +48,7 @@ If the Docker registry is only reachable via HTTPs (e.g. if it sits behind a pro
 
     sudo docker run \
       -d \
-      -e ENV_DOCKER_REGISTRY_HOST=ENTER-YOUR-REGISTRY-HOST-HERE \
+      -e ENV_DOCKER_REGISTRY_HOST=reg.ajie.tech \
       -e ENV_DOCKER_REGISTRY_PORT=ENTER-PORT-TO-YOUR-REGISTRY-HOST-HERE \
       -e ENV_DOCKER_REGISTRY_USE_SSL=1 \
       -p 8080:80 \
@@ -60,8 +60,8 @@ If you want to run the application with SSL enabled, you can do the following:
 
     sudo docker run \
       -d \
-      -e ENV_DOCKER_REGISTRY_HOST=ENTER-YOUR-REGISTRY-HOST-HERE \
-      -e ENV_DOCKER_REGISTRY_PORT=ENTER-PORT-TO-YOUR-REGISTRY-HOST-HERE \
+      -e ENV_DOCKER_REGISTRY_HOST=reg.ajie.tech \
+      -e ENV_DOCKER_REGISTRY_PORT=5000 \
       -e ENV_USE_SSL=yes \
       -v $PWD/server.crt:/etc/apache2/server.crt:ro \
       -v $PWD/server.key:/etc/apache2/server.key:ro \
