@@ -2,18 +2,6 @@
 
 The `docker-registry-frontend` is a browser-based solution for browsing and modifying a private Docker registry.
 
-[![](https://badge.imagelayers.io/konradkleine/docker-registry-frontend:v2.svg)](https://imagelayers.io/?images=konradkleine/docker-registry-frontend:v2 'Get your own badge on imagelayers.io')
-[![devDependency Status](https://david-dm.org/kwk/docker-registry-frontend/dev-status.svg?style=flat-square)](https://david-dm.org/kwk/docker-registry-frontend#info=devDependencies)
-[![Issue Count](https://codeclimate.com/github/kwk/docker-registry-frontend/badges/issue_count.svg)](https://codeclimate.com/github/kwk/docker-registry-frontend)
-
-# Before opening a bug report...
-
-...make sure you have consulted the `example-setup/README.md`.
-
-# Features
-
-For a list of all the features, please see the [Wiki][features]. Note, that currently the Wiki pages still refer to version 1 of this frontend.
-
 # Usage
 
 This application is available in the form of a Docker image that you can run as a container by executing this command:
