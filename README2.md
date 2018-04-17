@@ -78,8 +78,8 @@ To learn how to develop for the docker-registry-frontend, see [here](develop/REA
 
 
 
-  [1]: http://localhost:8080
-  [2]: https://localhost
+  [1]: http://reg.ajie.tech:8080
+  [2]: https://reg.ajie.tech
   [3]: https://github.com/kwk/docker-registry-frontend
   [features]: https://github.com/kwk/docker-registry-frontend/wiki/Features
   [v1branch]: https://github.com/kwk/docker-registry-frontend/tree/v1-deprecated
