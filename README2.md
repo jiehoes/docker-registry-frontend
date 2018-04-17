@@ -10,7 +10,7 @@ This application is available in the form of a Docker image that you can run as 
 
 This command starts the container and forwards the container's private port `80` to your host's port `8080`. Make sure you specify the correct url to your registry.
 
-When the application runs you can open your browser and navigate to [http://localhost:8080][1].
+When the application runs you can open your browser and navigate to [http://reg.ajie.tech:8080][1].
 
 ## Docker registry using SSL encryption
 
@@ -24,7 +24,7 @@ If you want to run the application with SSL enabled, you can do the following:
 
     docker run -d -e ENV_DOCKER_REGISTRY_HOST=reg.ajie.tech -e ENV_DOCKER_REGISTRY_PORT=5000 -e ENV_USE_SSL=yes -v $PWD/server.crt:/etc/apache2/server.crt:ro -v $PWD/server.key:/etc/apache2/server.key:ro -p 443:443 jiehoes/my-pdr
 
-Note that the application still serves the port `80` but it is simply not exposed ;). Enable it at your own will. When the application runs with SSL you can open your browser and navigate to [https://localhost][2].
+Note that the application still serves the port `80` but it is simply not exposed ;). Enable it at your own will. When the application runs with SSL you can open your browser and navigate to [https://reg.ajie.tech][2].
 
 ## Use the application as the registry
 
@@ -76,9 +76,6 @@ command. Note that providing a big number will result in a heavy load on browser
 If you like the application, I invite you to contribute and report bugs or feature request on the project's github page: [https://github.com/kwk/docker-registry-frontend][3].
 To learn how to develop for the docker-registry-frontend, see [here](develop/README.md).
 
-Thank you for your interest!
-
- -- Konrad
 
 
   [1]: http://localhost:8080
