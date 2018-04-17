@@ -10,22 +10,9 @@ The `docker-registry-frontend` is a browser-based solution for browsing and modi
 
 ...make sure you have consulted the `example-setup/README.md`.
 
-## PLEASE, READ THIS!
-
-***THIS VERSION OF THE DOCKER REGISTRY FRONTEND ONLY WORKS WITH THE DOCKER REGISTRY V2. THERE'S ALSO A LEGACY ["V1-DEPRECATED" BRANCH][v1branch] WHICH WORKS WITH THE OLD 0.9.1 DOCKER REGISTRY. THE ["V1-DEPRECATED" BRANCH][v1branch] IS VERY STABLE BUT WON'T RECEIVE SIGNIFICANT ATTENTION ANY LONGER BECAUSE THE OLD DOCKER REGISTRY WAS DECLARED DEPRECATED.***
-
-***THE V2 SUPPORT FOR THE DOCKER REGISTRY FRONTEND IS STILL UNDER ACTIVE DEVELOPMENT. THERE'S A FAIR CHANCE THAT A MAJORITY OF FEATURES IS NOT YET IMPLEMENTED. CHECK THE [ISSUES](https://github.com/kwk/docker-registry-frontend/issues) AND OPEN A BUG IF SOMETHING DOESN'T WORK RIGHT AWAY.***
-
-***TO PULL A VERSION OF THIS BRANCH FROM THE DOCKER HUB, MAKE SURE YOU PULL AND RUN ```konradkleine/docker-registry-frontend:v2```***
-
 # Features
 
 For a list of all the features, please see the [Wiki][features]. Note, that currently the Wiki pages still refer to version 1 of this frontend.
-
-# Development
-
-To learn how to develop for the docker-registry-frontend, see
-[here](develop/README.md).
 
 # Usage
 
