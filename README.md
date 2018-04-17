@@ -31,7 +31,7 @@ To learn how to develop for the docker-registry-frontend, see
 
 This application is available in the form of a Docker image that you can run as a container by executing this command:
 
-    sudo docker run \
+    docker run \
       -d \
       -e ENV_DOCKER_REGISTRY_HOST=reg.ajie.tech \
       -e ENV_DOCKER_REGISTRY_PORT=5000 \
@@ -46,7 +46,7 @@ When the application runs you can open your browser and navigate to [http://loca
 
 If the Docker registry is only reachable via HTTPs (e.g. if it sits behind a proxy) , you can run the following command:
 
-    sudo docker run \
+    docker run \
       -d \
       -e ENV_DOCKER_REGISTRY_HOST=reg.ajie.tech \
       -e ENV_DOCKER_REGISTRY_PORT=ENTER-PORT-TO-YOUR-REGISTRY-HOST-HERE \
@@ -58,7 +58,7 @@ If the Docker registry is only reachable via HTTPs (e.g. if it sits behind a pro
 
 If you want to run the application with SSL enabled, you can do the following:
 
-    sudo docker run \
+    docker run \
       -d \
       -e ENV_DOCKER_REGISTRY_HOST=reg.ajie.tech \
       -e ENV_DOCKER_REGISTRY_PORT=5000 \
@@ -80,7 +80,7 @@ Normally this would then give bad advice on how to access a tag:
 
 We can override what hostname and port to put here:
 
-    sudo docker run \
+    docker run \
      -d \
      -e ENV_DOCKER_REGISTRY_HOST=localhost \
      -e ENV_DOCKER_REGISTRY_PORT=5000 \
@@ -99,7 +99,7 @@ A value of `80` or `443` for `ENV_REGISTRY_PROXY_PORT` will not actually be show
 If you want to use Kerberos to protect access to the registry frontend, you can
 do the following:
 
-    sudo docker run \
+    docker run \
       -d \
       -e ENV_DOCKER_REGISTRY_HOST=reg.ajie.tech \
       -e ENV_DOCKER_REGISTRY_PORT=5000 \
@@ -118,7 +118,7 @@ You can of course combine SSL and Kerberos.
 
 If you want to start applicaton with browse mode which means no repos/tags management feature in the UI, You can specify `ENV_MODE_BROWSE_ONLY` flag as follows:
 
-    sudo docker run \
+    docker run \
       -d \
       -e ENV_DOCKER_REGISTRY_HOST=reg.ajie.tech \
       -e ENV_DOCKER_REGISTRY_PORT=5000 \
