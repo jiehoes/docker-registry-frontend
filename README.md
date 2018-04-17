@@ -31,12 +31,7 @@ To learn how to develop for the docker-registry-frontend, see
 
 This application is available in the form of a Docker image that you can run as a container by executing this command:
 
-    docker run \
-      -d \
-      -e ENV_DOCKER_REGISTRY_HOST=reg.ajie.tech \
-      -e ENV_DOCKER_REGISTRY_PORT=5000 \
-      -p 8080:80 \
-      jiehoes/docker-registry-frontend:v2
+docker run -d -e ENV_DOCKER_REGISTRY_HOST=reg.ajie.tech -e ENV_DOCKER_REGISTRY_PORT=5000 -p 8080:80 jiehoes/docker-registry-frontend:v2
 
 This command starts the container and forwards the container's private port `80` to your host's port `8080`. Make sure you specify the correct url to your registry.
 
